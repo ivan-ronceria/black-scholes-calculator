@@ -66,7 +66,7 @@ def black_scholes(stock_price, strike_price, riskless_rate, vol, ttm, call_or_pu
     stock_price : The underlying price at t = 0
     strike_price : The strike price of the contract
     riskless_rate : The risk-free rate
-    vol : The volatility (sigma) of the stock. Many ways to estimate, but we can use implied volatility
+    vol : The volatility of the stock. This is assumed to be constant by the model, but not realistic
     ttm : Time to maturity. The date of the maturity minus the initial date of entering in the position
     call_or_put : Positive 1 to indicate a call, negative 1 for a put
 
